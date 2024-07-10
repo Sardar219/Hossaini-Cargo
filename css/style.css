@@ -1,0 +1,116 @@
+.navbar nav.navbar {
+  padding: 5px 15px;
+  width: 100%;
+}
+.navbar #mynav {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1.6rem !important;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.nav-link {
+  color: black !important;
+  margin: 0 13px;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1.3rem;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.menu-btn-burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 4px;
+  background: black;
+  transition: all 1s ease-in-out;
+}
+.menu-btn-burger::before {
+  content: "";
+  width: 28px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  right: 0;
+  top: -8px;
+  transition: all 1s ease-in-out;
+}
+.menu-btn-burger::after {
+  content: "";
+  width: 28px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  transition: all 1s ease-in-out;
+}
+.menu-btn-burger.open {
+  transform: rotate(360deg);
+  background: transparent;
+}
+.menu-btn-burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn-burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.slider {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/slider-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.header-box {
+  background-color: #04233b;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+.header-box section {
+  font-size: 12px;
+}
+.header-box section span.fa {
+  font-size: 13px;
+  padding: 7px;
+  background-color: white;
+  color: #0a97b0;
+  border-radius: 50%;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.header-box section span {
+  cursor: pointer;
+}
+.header-box section:hover span.fa {
+  color: #000000;
+}
+.header-box section a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

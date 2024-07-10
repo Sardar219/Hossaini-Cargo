@@ -1,0 +1,36 @@
+@import "./varibales";
+@import "./menu";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+.header-box {
+  background-color: $primary2;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  section {
+    font-size: 12px;
+    span.fa {
+      font-size: 13px;
+      padding: 7px;
+      background-color: white;
+      color: $primary1;
+      border-radius: 50%;
+      margin-right: 3px;
+      cursor: pointer;
+    }
+    span {
+      cursor: pointer;
+    }
+    &:hover span.fa {
+      color: $black2;
+    }
+    a {
+      color: white;
+    }
+  }
+}

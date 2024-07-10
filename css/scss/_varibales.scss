@@ -1,0 +1,8 @@
+$primary1: #0a97b0;
+$primary2: #1b6ca8;
+$primary2: #04233b;
+$textCol: #1f1f1f;
+$black2: #000000;
+@mixin transition {
+  transition: all 1s ease-in-out;
+}
